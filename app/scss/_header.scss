@@ -21,7 +21,6 @@
 .header-nav {
 	height: 75px;
 	background-color: white;
-	box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
 }
 
 .nav-list {
@@ -51,18 +50,20 @@
 }
 
 .ourWorks-background {
-	margin: 0 auto;
-	width: 1920px;
+	display: flex;
+	justify-content: center;
 	position: relative;
+
 	img {
 		display: block;
 		filter: brightness(15%);
+		max-width: 100%;
 	}
 }
 
 .div_abs	{
 	position: absolute;
-	top: 190px;
+	top: 220px;
 	left: 50%;
 	transform: translate(-50%);
 }

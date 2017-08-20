@@ -55,6 +55,12 @@ gulp.task("html", function(){
 	.pipe(browserSync.reload({stream: true}))
 })
 
+gulp.task("img", function(){
+	gulp.src("app/img/**/*")
+	.pipe(gulp.dest("dist/img"))
+	.pipe(browserSync.reload({stream: true}))
+})
+
 gulp.task("scripts", function(){
 	gulp.src("app/js/*.js")
 	.pipe(gulp.dest("dist/js"))
@@ -71,10 +77,11 @@ gulp.task("clear", function() {
 })*/
 
 
-gulp.task("watch", ["browser-sync", "css-libs", "scriptslibs", "html", "scripts"],  function(){
+gulp.task("watch", ["browser-sync", "css-libs", "scriptslibs", "html", "scripts", "img"],  function(){
 	gulp.watch("app/scss/*.scss", ["sass"])
 	gulp.watch("app/*.html", ['html'])
 	gulp.watch("app/js/*.js", ['scripts'])
+	gulp.watch("app/img/**/*", ['img'])
 })
 
 
