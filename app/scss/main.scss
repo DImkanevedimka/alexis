@@ -1,9 +1,9 @@
  @font-face {
     font-family: Wisdom Script; 
-    src: url(fonts/WisdomScript.otf);
+    src: url(../fonts/WisdomScript_Personal_License/WisdomScriptAJ.otf);
    }
 
-@import "_header.scss";
-@import "_content.scss";
-@import "_footer.scss";
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";
 

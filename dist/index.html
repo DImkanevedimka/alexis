@@ -7,9 +7,7 @@
 	<link rel="stylesheet" href="css/clearfix.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Poppins:300,400,500,600,700|Sacramento" rel="stylesheet">
-	<link rel="stylesheet" href="slick/slick.css">
-	<link rel="stylesheet" href="slick/slick-theme.css">
-	<link rel="stylesheet" href="libs/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Document</title>
 </head>
@@ -69,7 +67,7 @@
 		<!-- About Us -->
 		<div class="container" id="01">
 			<div class="row aboutUs">
-				<div class="col-lg-5 col-md-5 col-sm-4 aboutus-col">
+				<div class="col-lg-6 col-md-5 col-sm-4 aboutus-col">
 					<div class="aboutUs-img">
 						<img src="img/office.png" alt="">
 						<div class="img-border"></div>
@@ -149,15 +147,13 @@
 		</div>
 		<!-- video -->
 		<div class="video">
-			<div class="bgvideo">
-				<div class="video-background"></div>
-				<div class="play" id="playv">
-					<p class="string1">Explore Our Awesomeness</p>
-					<img src="img/playbuttom.png" alt="">
-					<p class="string2">Click to play the video</p>
-				</div>
+			<div class="video-background"></div>
+			<div class="play" id="playv">
+				<p class="string1">Explore Our Awesomeness</p>
+				<img src="img/playbuttom.png" alt="">
+				<p class="string2">Click to play the video</p>
 			</div>
-			<video width="auto" height="500px" id="videoID">
+			<video width="100%" height="500px" id="videoID" poster="img/video.png" >
 				<source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
 			</video>
 		</div>	
@@ -168,19 +164,178 @@
 				<h4 class="caption">Portfolio.</h4>
 				<p class="heading-text">We understand your requirement and provide quality works.</p>
 				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio1.png" alt=""></div>
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio2.png" alt=""></div>
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio3.png" alt=""></div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio4.png" alt=""></div>
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio5.png" alt=""></div>
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio6.png" alt=""></div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio7.png" alt=""></div>
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio8.png" alt=""></div>
-					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item"><img src="img/portfolio9.png" alt=""></div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio1.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project One
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio2.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Two
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio3.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Three
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio4.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Four
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio5.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Five
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio6.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Six
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio7.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Seven
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio8.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Eight
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 portfolio-item">
+						<div class="img-container">
+							<img id="portfolioImg" src="img/portfolio9.png" alt="">
+							<div class="plus-img">
+								<img  src="img/plus.png" alt="">
+							</div>
+							<div class="img-info">
+								<div class="bottom_lines">
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+								</div>
+								<div class="img-info-text">
+									Project Nine
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -192,7 +347,7 @@
 				<p class="heading-text">We understand your requirement and provide quality works.</p>
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="dev1" class="devFull">
+						<div id="dev1" class="devFull" data-index="1">
 							<div class="portrait">
 								<img src="img/dev2.png" alt="">
 								<div class="gradient"></div>
@@ -204,7 +359,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="dev2" class="devFull">
+						<div id="dev2" class="devFull" data-index="1">
 							<div class="portrait">
 								<img src="img/dev2.png" alt="">
 								<div class="gradient2"></div>
@@ -216,7 +371,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="dev3" class="devFull">
+						<div id="dev3" class="devFull" data-index="1">
 							<div class="portrait">
 								<img src="img/dev2.png" alt="">
 								<div class="gradient3"></div>
@@ -228,7 +383,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<div id="dev4" class="devFull">
+						<div id="dev4" class="devFull" data-index="1">
 							<div class="portrait">
 								<img src="img/dev2.png" alt="">
 								<div class="gradient4"></div>
@@ -248,6 +403,7 @@
 								<p id="changedtext">Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding facebook seed round A/B testing mass market. 
 								</p>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -779,9 +935,7 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="libs/jquery.min.js"></script>
-	<script type="text/javascript" src="libs/slick.min.js"></script>
-	<script type="text/javascript" src="libs/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/libs.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

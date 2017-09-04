@@ -1,6 +1,6 @@
 @font-face {
   font-family: Wisdom Script;
-  src: url(fonts/WisdomScript.otf); }
+  src: url(../fonts/WisdomScript_Personal_License/WisdomScriptAJ.otf); }
 
 .logo, .logo2 {
   display: -webkit-box;
@@ -214,12 +214,13 @@ p.text-info3 {
 
 .aboutUs-right {
   position: absolute;
-  top: 20px;
-  left: 330px;
+  top: 75px;
+  left: 493px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     .aboutUs-right {
       top: -37px;
@@ -282,7 +283,7 @@ p.text-info3 {
   font-weight: 700;
   text-transform: uppercase;
   position: absolute;
-  top: -75px;
+  top: -90px;
   left: 10px; }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .number, .number02 {
@@ -491,13 +492,6 @@ p.text-info3 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative; }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .video video {
-      width: 100%;
-      height: auto; } }
-  @media screen and (max-width: 767px) {
-    .video video {
-      width: 100%; } }
 
 .play {
   position: absolute;
@@ -556,11 +550,61 @@ p.text-info3 {
       padding-top: 60px;
       padding-bottom: 30px; } }
 
+.img-container {
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  position: relative; }
+
+.plus-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  display: none;
+  cursor: pointer; }
+
+.img-info {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  opacity: 0;
+  bottom: -64px;
+  -webkit-transition: 800ms;
+  -o-transition: 800ms;
+  transition: 800ms;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .img-info .bottom_lines, .img-info .bottom_lines2 {
+    margin: 0; }
+
+.img-info-text {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 61px; }
+
 .portfolio-item {
-  padding-bottom: 30px; }
-  .portfolio-item img {
-    height: 100%;
-    width: 100%; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .portfolio-item .img-container img {
+    width: 100%;
+    height: 100%; }
+
+.img-container:hover img {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.img-container:hover .img-info {
+  opacity: 1;
+  bottom: 0; }
+
+.img-container:hover .plus-img {
+  display: block; }
 
 .ourTeam {
   padding-bottom: 100px; }
@@ -1164,6 +1208,9 @@ p.about {
     .slick-dots {
       left: -560px;
       bottom: 30px; } }
+
+.slick-slide {
+  outline: none; }
 
 .container08 {
   position: relative;

@@ -170,11 +170,12 @@ p.text-info3 {
 
 .aboutUs-right {
 	position: absolute;
-	top: 20px;
-	left: 330px;
+	top: 75px;
+	left: 493px;
 	background-color: #fff;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0;
+	margin: 0;
 
 	@media screen and (min-width:992px) and (max-width:1199px) {
 		top: -37px;
@@ -250,7 +251,7 @@ p.text-info3 {
 	font-weight: 700;
 	text-transform: uppercase;
 	position: absolute;
-	top: -75px;
+	top: -90px;
 	left: 10px;
 
 	@media screen and (min-width:768px) and (max-width:991px) {
@@ -471,19 +472,6 @@ p.text-info3 {
 	display: flex;
 	justify-content: center;
 	position: relative;
-
-	@media screen and (min-width:768px) and (max-width:991px) {
-		video {
-			width: 100%;
-			height: auto;
-		}
-	}
-
-	@media screen and (max-width:767px) {
-		video {
-			width: 100%;
-		}
-	}
 }
 
 .play {
@@ -551,16 +539,77 @@ p.text-info3 {
 		padding-bottom: 30px;
 	}
 }
+.img-container {
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+	position: relative;
+}
+
+.plus-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	display: none;
+	cursor: pointer;
+}
+
+.img-info {
+	position: absolute;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	opacity: 0;
+	bottom: -64px;
+	transition: 800ms;
+	padding-left: 5px;
+	padding-right: 5px;
+	.bottom_lines {
+		margin: 0;
+	}
+}
+.img-info-text{
+	font-family: Poppins;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 61px;
+}
 
 .portfolio-item {
-	padding-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 
-	img {
-		height: 100%;
-		width: 100%;
+	.img-container {
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
 
+.img-container:hover{
+
+	
+	img {
+		padding-top: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+
+	.img-info {
+		opacity: 1;
+		bottom: 0;
+	}
+
+	.plus-img {
+		display: block;
+	}
+}
+
+
+
+// For our Team
 .ourTeam {
 	padding-bottom: 100px;
 
@@ -1261,6 +1310,12 @@ p.about {
 
 }
 
+
+.slick-slide {
+	outline: none;
+}
+
+
 .container08 {
 	position: relative;
 	text-align: center;
@@ -1689,7 +1744,7 @@ p.about {
 		font-weight: 400;
 		margin-bottom: 20px;
 
-			@media screen and (min-width:768px) and (max-width:991px) {
+		@media screen and (min-width:768px) and (max-width:991px) {
 			width: 300px;
 		}
 	}
