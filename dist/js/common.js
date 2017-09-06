@@ -33,6 +33,8 @@ $(document).ready(function(){
     var quotes = $('#quotes').find('.quote-text');
     quotes.css('display', 'none');
     $('#quotes').find('[data-index=' + index + ']').css('display', 'block');
+    $('.pointer').removeClass("current");
+    $('.pointer', this).addClass("current");
   });
 
 
@@ -41,5 +43,13 @@ $(document).ready(function(){
     $('.video-background').css('display', 'none');
     $('#videoID')[0].play();
     $('#videoID').attr('controls','controls');
+  });
+
+  $('.toggle-buttom').click(function(){
+    $('.toggle-menu').addClass('toggle-on');
+  });
+
+  $('.toggle-buttom2').click(function(){
+    $('.toggle-menu').removeClass('toggle-on');
   });
 });

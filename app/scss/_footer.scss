@@ -7,6 +7,7 @@ footer {
 	background-color: rgba(38, 39, 50, 0.85);
 	font-family: Poppins;
 	padding: 0;
+
 	p {
 		color: #fef4f2;
 		font-size: 16px;
@@ -84,9 +85,6 @@ p.top-text3 {
 }
 
 .col-flex2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	height: 100%;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -100,5 +98,48 @@ p.top-text3 {
 
 .bottom_lines2 {
 	@extend .bottom_lines;
+	margin: 0;
+}
+
+.follow-imgs {
+	display: inline-block;
+	width: auto;
+	img {
+		padding-right: 15px;
+	}
+
+	@media screen and (min-width:768px) and (max-width:991px) {
+		img {
+			width: 20%;
+			padding: 0;
+			margin-right: 4px;
+		}
+	}
+	@media screen and (max-width:767px){
+		img {
+			width: 10%;
+		}
+	}
+}
+
+.col-ins {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	padding-left: 25px;
+
+	@media screen and (min-width:992px) and (max-width:1199px) {
+		padding-left: 10px;
+	}
+}
+
+.footer-container2 {
+	@extend .footer-container;
+	height: 200px;
+	background-color: red;
+}
+
+.footer-row {
 	margin: 0;
 }
