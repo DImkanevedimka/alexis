@@ -1390,13 +1390,14 @@ p.about {
 
 	@media screen and (max-width:767px) {
 		padding-top: 60px;
-	}
-
-	.col-xs-6 {
-		height: 135px;
-		margin-bottom: 10px;
+		.col-xs-6 {
+			height: 135px;
+			margin-bottom: 10px;
+		}
 	}
 }
+
+
 
 .heading {
 	display: flex;
